@@ -37,3 +37,5 @@ git clone https://github.com/yourusername/server-stats.git
 2. cd server-stats
 3.chmod +x server-stats.sh
 4. ./server-stats.sh
+
+URL of the project = https://roadmap.sh/projects/server-stats
