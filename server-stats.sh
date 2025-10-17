@@ -43,3 +43,7 @@ ps -A -o %cpu,comm | sort -nr | head -6
 printf '%*s\n' "$(tput cols)" '' | tr ' ' '='
 echo "Top 5 by Memory:"
 ps -A -o %mem,comm | sort -nr | head -6
+echo
+echo "OS Version: $(sw_vers -productVersion)"
+echo "Uptime: $(uptime | sed 's/^.*up //' | sed 's/,.*//')"
+echo "Logged in users: $(who | wc -l)"
